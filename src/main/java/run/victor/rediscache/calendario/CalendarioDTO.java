@@ -15,7 +15,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CalendarioDTO implements Serializable {
+    private String tempoResposta;
     private int total;
-    private List<Corrida> corridas;
+    private List<CorridaDTO> corridas;
 
 }

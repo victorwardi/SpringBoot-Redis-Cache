@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Corrida implements Serializable {
+public class CorridaDTO implements Serializable {
 
     private String id;
     private String slug;

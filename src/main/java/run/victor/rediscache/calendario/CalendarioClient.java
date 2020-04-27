@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface CalendarioClient {
 
     @Cacheable(value = "calendario", key = "#uf")
-    @GetMapping(value="/calendario?uf={uf}",consumes= MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value="/calendario?estado={uf}",consumes= MediaType.APPLICATION_JSON_VALUE)
     CalendarioDTO calendario(@PathVariable String uf);
 
 }
